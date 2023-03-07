@@ -1,10 +1,9 @@
-const img = document.getElementById("img");
+const img = document.querySelector("#img");
 
 fetch("https://random.dog/woof.json")
-  .then((e) => {
-    return e.json();
+  .then((n) => {
+    return n.json();
   })
-  .then((data) => {
-    console.log(data);
-    img.setAttribute("src", data.url);
+  .then((cons) => {
+    img.setAttribute("src", cons.url);
   });
